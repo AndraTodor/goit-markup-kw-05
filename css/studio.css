@@ -78,7 +78,6 @@ a {
 a:hover {
     color: #404BBF;
     cursor: pointer;
-    text-decoration: underline;
     transition: var(--transition)
 }
 address a, img{
@@ -326,7 +325,10 @@ h2 {
 }
 .icon-border svg:hover {
     fill: #4D5AE5;
-    transition: var(--transition);
+    transition: transform var(--transition);
+}
+.icon-border:hover{
+    border: 1px solid #4D5AE5;
 }
 
 /* Footer section */
