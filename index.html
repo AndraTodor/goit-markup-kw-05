@@ -20,7 +20,7 @@
     <header class="nav-bar container">
       <nav class="main-nav">
         <a href="index.html" class="logo">Web</a>
-        <a href="index.html" class="active-page">Studio</a>
+        <a href="index.html" class="current-page">Studio</a>
         <a href="portofolio.html">Portofolio</a>
         <a href="contacts.html">Contacts</a>
       </nav>
@@ -33,18 +33,19 @@
         </div>
       </address>
     </header>
-    <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
-        <button type="button" class="close-btn" data-modal-close>&times;</button>
-        <p>Leave your contacts and we will call you back</p>
-      </div>
-    </div>
+  
     <main>
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container container-column">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open="">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>Order Service</button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+          <button type="button" class="close-btn" data-modal-close>&times;</button>
+        <p>Leave your contacts and we will call you back</p>
+          </div>
         </div>
       </section>
       <!-- Strong points section -->

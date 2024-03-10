@@ -61,14 +61,13 @@ a {
     cursor: pointer;
     min-width: 500px;
 }
-.active-page {
+.current-page {
     border-bottom: 4px solid #4D5AE5;
-    /* bottom: 0;
-    left: 0; */
     width: 100%;
-    height: 2px;
     border-radius: 2px;
+    padding-bottom: 20px;
 }
+
 .main-nav a {
     margin-right: 20px;
 }
@@ -96,12 +95,15 @@ address a, img{
     /* width: 1440px; */
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/people-office.png") no-repeat center;
+    display: flex;
 }
 
 .container-column{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 48px;
 }
 .hero-title{
     color: #FFFFFF;
@@ -122,7 +124,6 @@ address a, img{
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 16px 32px;
-    margin-top: 48px;
     cursor: pointer;
     background: #4d5ae5;
 }
@@ -282,24 +283,24 @@ h2 {
     margin-top: 8px;
     justify-content: center;
 }
-.icons-list .icon{
+.icon{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color, color var(--transition);
 }
-.icons-list .icon:hover{
-    background-color: #4D5AE5;
+.icon:hover,
+.icon:active {
+    background: #4D5AE5;
     color: #fff;
+    /* fill: white; */
     transition: var(--transition);
 }
-.icons-list .icon svg:hover{
+.icon svg:hover{
     fill: white;
-}
-.icons-list .icon svg:active{
-    fill: #4D5AE5;
 }
 
 /* Customers section */
