@@ -272,18 +272,19 @@ h2 {
     width: 264px;
     height: 260px;
 }
-.icons-list .icon svg{
+.icons-list .icon svg {
     width: 16px;
     height: 16px;
-    fill: #858588;
 }
-.icons-list{
+
+.icons-list {
     display: flex;
     gap: 24px;
     margin-top: 8px;
     justify-content: center;
 }
-.icon{
+
+.icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -291,16 +292,18 @@ h2 {
     justify-content: center;
     align-items: center;
     transition: background-color, color var(--transition);
+    color: #858588;
 }
+
 .icon:hover,
 .icon:active {
     background: #4D5AE5;
     color: #fff;
-    /* fill: white; */
     transition: var(--transition);
 }
-.icon svg:hover{
-    fill: white;
+
+.icon svg {
+    fill: currentColor;
 }
 
 /* Customers section */
